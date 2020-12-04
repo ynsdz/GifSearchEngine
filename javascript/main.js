@@ -1,6 +1,8 @@
 
 document.querySelector(".js-go").addEventListener('click', function () {
-
+    var container = document.querySelector(".js-container");
+        
+    container.innerHTML = "";
     var input = document.querySelector("input").value;
     // console.log(input);
     // pushToDOM(input);
@@ -9,7 +11,9 @@ document.querySelector(".js-go").addEventListener('click', function () {
 });
 
 document.querySelector(".js-userinput").addEventListener('keyup', function (e) {
-
+    var container = document.querySelector(".js-container");
+        
+    container.innerHTML = "";
     var input = document.querySelector("input").value;
     // console.log(input);
 
@@ -67,9 +71,7 @@ function pushToDOM(input) {
 
     var container = document.querySelector(".var-container");
     container.innerHTML = input;
-    var container = document.querySelector(".js-container");
 
-    container.innerHTML=null;
 
 }
 
