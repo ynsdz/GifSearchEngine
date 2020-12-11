@@ -1,8 +1,7 @@
 
 document.querySelector(".js-go").addEventListener('click', function () {
     var container = document.querySelector(".js-container");
-        
-    container.innerHTML = "";
+    container.innerHTML = " ";
     var input = document.querySelector("input").value;
     // console.log(input);
     // pushToDOM(input);
@@ -11,14 +10,14 @@ document.querySelector(".js-go").addEventListener('click', function () {
 });
 
 document.querySelector(".js-userinput").addEventListener('keyup', function (e) {
-    var container = document.querySelector(".js-container");
-        
-    container.innerHTML = "";
+    
     var input = document.querySelector("input").value;
     // console.log(input);
 
     // if the key ENTER is pressed...
     if (e.which === 13) {
+        var container = document.querySelector(".js-container");
+        container.innerHTML = " ";
         // pushToDOM(input);
         getData();
     }
@@ -71,7 +70,9 @@ function pushToDOM(input) {
 
     var container = document.querySelector(".var-container");
     container.innerHTML = input;
+    var container = document.querySelector(".js-container");
 
+    container.innerHTML=null;
 
 }
 
